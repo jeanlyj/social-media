@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html leng="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Network</title>
+    <style>
+    /***   social network  ***/
+.box{
+    width: 200px;
+    height:200px; 
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+.container{
+    width: 180px;
+    height:100px;
+}
+.icon1,.icon2,.icon3{
+    float:left; 
+	}
+.container::before, .container::after{
+    content: "";
+    display: table;
+}
+.container::after{
+    clear:both;	
+}	
+.icon1{
+	display: block;
+	background-image:url(http://www.ustarcanada.com/wp-content/uploads/2018/04/wechat-1.png);
+    background-repeat: no-repeat;
+    width:40px;
+    height:40px;
+    margin-left:20px; 
+	}
+.icon1:hover{
+	background-image:url(http://www.ustarcanada.com/wp-content/uploads/2018/04/wechat-2.png);
+	background-repeat: no-repeat;
+	width: 40px;
+	}	
+	
+.icon2{
+	background-image:url(http://www.ustarcanada.com/wp-content/uploads/2018/04/weibo-1.png);
+	background-repeat: no-repeat;
+    width: 40px;
+    height:40px;
+    margin-left:20px; 
+	}
+.icon2:hover{
+	background-image:url(http://www.ustarcanada.com/wp-content/uploads/2018/04/weibo-2.png);
+	background-repeat: no-repeat;
+	width: 40px;
+	}	
 
+.icon3{
+	background-image: url(http://www.ustarcanada.com/wp-content/uploads/2018/04/facebook-1.png);
+	background-repeat: no-repeat;
+    width: 40px;
+    height:40px;
+    margin-left:20px; 
+	}
+.icon3:hover{
+	background-image: url(http://www.ustarcanada.com/wp-content/uploads/2018/04/facebook-2.png);
+	background-repeat: no-repeat;
+	width: 40px;
+	}		
+/***   wechat  ***/  
+.icon1 img{ 
+    position:absolute; 
+    display:none; 
+	z-index:99; 
+}
+.icon1:hover img {
+    display:block; 
+    width:100px;
+	margin-top: 50px;
+	}
+</style>
+</head>
+<body>
+     <div class="box">
+         <div class="container">
+             <div class="social-icons">       
+                 <div class="icon1"><img src="http://www.ustarcanada.com/wp-content/uploads/2018/03/图片2-3.png" alt="微信公众号" height="100" /></div>        
+                 <div class="icon2"></div>      
+                 <div class="icon3"></div>
+            </div>
+         </div>
+     </div>
+</body>
+</html>
